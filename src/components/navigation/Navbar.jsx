@@ -7,6 +7,7 @@ const Navbar = () => {
 const navigate = useNavigate();
 
 const [isHidden, setIsHidden] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const SCROLL_THRESHOLD = 100;
 
   useEffect(() => {
@@ -42,12 +43,23 @@ const [isHidden, setIsHidden] = useState(false);
         </div>
 
         {/* Middle: Menu Section (Stays Fixed & Centers) */}
-        <nav id="header-menu" className={menuClass}>
-          <a href="#aboutus">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#products">Products</a>
-          <a href="#contactus">Contact Us</a>
+        <nav id="header-menu" className={`${menuClass} ${isMenuOpen ? 'open' : ''}`}>
+          <a href="#aboutus" onClick={() => setIsMenuOpen(false)}>About Us</a>
+          <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
+          <a href="#products" onClick={() => setIsMenuOpen(false)}>Products</a>
+          <a href="#contactus" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
         </nav>
+
+        {/* Mobile: hamburger toggle (visible on small screens) */}
+        <button
+          className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          onClick={() => setIsMenuOpen(prev => !prev)}
+        >
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
+        </button>
 
         {/* Right: Demo Button Section (Disappears) */}
         <div id="header-demo" className={demoClass} >
