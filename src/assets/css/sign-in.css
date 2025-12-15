@@ -23,7 +23,7 @@ body {
 
 .image-section {
   flex: 1;
-  background-image: url("../image/geometry-shape.jpg");
+  background-image: url("../image/geometry-shape-low.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
