@@ -4,46 +4,28 @@ import '../../assets/css/sign-in.css';
 const Signin = () => {
   return (
     <>
-    
-    <div class="auth-card">
+      <div class="container">
 
-    {/* <!-- LEFT IMAGE PLACEHOLDER --> */}
-    <div class="auth-image">
-      {/* <!-- Image will go here later --> */}
-    </div>
+    <div class="image-section"></div>
 
-    {/* <!-- RIGHT FORM --> */}
-    <div class="auth-form">
-      <div class="logo">Crextio</div>
+    <div class="form-section">
+      <div class="logo">PPA</div>
 
-      <h1>Create an account</h1>
-      <p class="subtitle">Sign up and get 30 days free trial</p>
+      <h1>Sign in</h1>
+      <p class="t-subtitle">Welcome to PPA Dashboard!</p>
+      <p class="subtitle">Manage financial activities, members, and transactions securely.</p>
 
-      <form>
-        <label>Full name</label>
-        <input type="text" placeholder="Amélie Laurent" />
+      <form class="form-input-section">
+        <p class="form-subtitle">Email</p>
+        <input type="email" placeholder="Email" required />
+        <p class="form-subtitle">Password</p>
+        <input type="password" placeholder="Password" required />
 
-        <label>Email</label>
-        <input type="email" placeholder="amelie@gmail.com" />
-
-        <label>Password</label>
-        <input type="password" placeholder="••••••••••••" />
-
-        <button type="submit" class="primary">Submit</button>
-
-        <div class="divider">
-          <button type="button" class="social">Apple</button>
-          <button type="button" class="social">Google</button>
-        </div>
+        <button type="submit">Sign in</button>
       </form>
-
-      <p class="footer">
-        Have any account? <a href="google">Sign in</a>
-      </p>
     </div>
 
   </div>
-    
     
     </>
   )
