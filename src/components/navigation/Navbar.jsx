@@ -43,10 +43,10 @@ const [isHidden, setIsHidden] = useState(false);
 
         {/* Middle: Menu Section (Stays Fixed & Centers) */}
         <nav id="header-menu" className={menuClass}>
-          <a href="#benefits">About Us</a>
-          <a href="#specs">Service</a>
-          <a href="#how-to">Product</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#aboutus">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#contactus">Contact Us</a>
         </nav>
 
         {/* Right: Demo Button Section (Disappears) */}
