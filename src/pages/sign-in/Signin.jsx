@@ -1,42 +1,47 @@
 import React from 'react'
+import '../../assets/css/sign-in.css';
 
 const Signin = () => {
   return (
     <>
     
-      <div class="container">
-    {/* <!-- LEFT SIDE --> */}
-    <div class="left">
+    <div class="auth-card">
+
+    {/* <!-- LEFT IMAGE PLACEHOLDER --> */}
+    <div class="auth-image">
+      {/* <!-- Image will go here later --> */}
+    </div>
+
+    {/* <!-- RIGHT FORM --> */}
+    <div class="auth-form">
       <div class="logo">Crextio</div>
 
       <h1>Create an account</h1>
-      <p>Sign up and get 30 days free trial</p>
+      <p class="subtitle">Sign up and get 30 days free trial</p>
 
-      <label>Full name</label>
-      <input type="text" placeholder="Amélie Laurent" />
+      <form>
+        <label>Full name</label>
+        <input type="text" placeholder="Amélie Laurent" />
 
-      <label>Email</label>
-      <input type="email" placeholder="amelie@gmail.com" />
+        <label>Email</label>
+        <input type="email" placeholder="amelie@gmail.com" />
 
-      <label>Password</label>
-      <input type="password" placeholder="••••••••••••" />
+        <label>Password</label>
+        <input type="password" placeholder="••••••••••••" />
 
-      <button class="primary">Submit</button>
+        <button type="submit" class="primary">Submit</button>
 
-      <div class="social">
-        <button> Apple</button>
-        <button>Google</button>
-      </div>
+        <div class="divider">
+          <button type="button" class="social">Apple</button>
+          <button type="button" class="social">Google</button>
+        </div>
+      </form>
 
-      <div class="footer">
-        Have any account? <a href="#">Sign in</a>
-      </div>
+      <p class="footer">
+        Have any account? <a href="google">Sign in</a>
+      </p>
     </div>
 
-    {/* <!-- RIGHT SIDE --> */}
-    <div class="right">
-      <div class="overlay"></div>
-    </div>
   </div>
     
     
