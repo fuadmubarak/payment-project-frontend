@@ -4,7 +4,8 @@ import '../../assets/css/sign-in.css';
 const Signin = () => {
   return (
     <>
-      <div class="container">
+    <title>PPA Dashboard - Sign In</title>
+    <div class="container">
 
     <div class="image-section"></div>
 

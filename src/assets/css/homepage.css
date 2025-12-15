@@ -1,0 +1,113 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.main{
+    padding-top: 800px;
+    text-align: center;
+}
+
+.main2{
+    height: 100vh; 
+    background-color: #ffffff; 
+    padding: 20px;
+}
+
+#main-header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 60px; 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    flex-basis: 30%; 
+}
+
+#header-title h1 {
+    font-style: italic;
+    font-size: 26px;
+    font-family: "DM Sans", sans-serif;
+    color: #000000; 
+    margin: 0;
+    font-weight: 700; 
+    letter-spacing: 1px;
+    transition: opacity 0.4s ease-in-out; 
+}
+
+#header-menu {
+    justify-content: center;
+    flex-basis: 40%;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding: 8px 15px; 
+    border-radius: 40px; 
+    background-color: transparent; 
+}
+
+#header-menu a {
+    text-decoration: none;
+    color: #000000; 
+    margin: 0 20px; 
+    font-size: 15px;
+    padding: 8px 0;
+    transition: color 0.3s, transform 0.2s;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+}
+
+#header-menu a:hover {
+    color: #000000; 
+    transform: translateY(-1px);
+}
+
+#header-demo {
+    justify-content: flex-end; 
+}
+
+.demo-button {
+    text-decoration: none;
+    background: linear-gradient(135deg, #f7eabd 0%, #fff6d6 100%); 
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    border-radius: 12px 40px 12px 40px; 
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px rgba(236, 244, 185, 0.4); 
+    transition: all 0.3s ease-in-out;
+     border: none;
+}
+
+.demo-button:hover {
+    background: linear-gradient(135deg, #f7eabd 0%, #fff6d6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(236, 244, 185, 0.4);
+}
+
+.hidden-element {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-centered {
+    flex-grow: 1; 
+    justify-content: center; 
+}
