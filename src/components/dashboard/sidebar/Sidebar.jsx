@@ -10,7 +10,7 @@ const Sidebar = () => {
       <div className="sidebar-top">
         {/* <div className="logo"> */}
           <img src="/ppa-logo-only.png" alt="Logo" />
-          <p>PPA</p>
+          <p className='p'>PPA</p>
         {/* </div> */}
       </div>
 
