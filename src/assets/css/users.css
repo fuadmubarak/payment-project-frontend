@@ -1,0 +1,154 @@
+/* =========================
+   USERS PAGE – MODERN UI
+========================= */
+
+/* Page Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.page-sub {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Primary Button */
+.primary-btn {
+  padding: 10px 18px;
+  background: #6c63ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: #5b54e6;
+}
+
+/* Card Wrapper */
+.table-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Table Header */
+.user-table thead {
+  background: #f9fafb;
+}
+
+.user-table th {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+/* Table Rows */
+.user-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.user-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.user-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: center;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.status.inactive {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* Center badge perfectly */
+.user-table td .status {
+  margin: 0 auto;
+}
+
+/* Action Buttons */
+.action-cell {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.table-btn {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+/* Button Variants */
+.table-btn.view {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.table-btn.view:hover {
+  background: #e5e7eb;
+}
+
+.table-btn.edit {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.table-btn.edit:hover {
+  background: #e0e7ff;
+}
+
+.table-btn.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.table-btn.delete:hover {
+  background: #fecaca;
+}

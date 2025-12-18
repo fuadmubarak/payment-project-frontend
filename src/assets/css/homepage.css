@@ -112,7 +112,6 @@ body{
     justify-content: center; 
 }
 
-/* Mobile / Responsive styles */
 .menu-toggle {
     display: none;
     background: transparent;
@@ -143,12 +142,8 @@ body{
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* Hidden dropdown behavior for mobile */
 #header-menu {
     gap: 0;
-}
-#header-menu.open {
-    /* overrides applied in media queries for mobile */
 }
 
 @media (max-width: 768px) {
@@ -160,7 +155,6 @@ body{
         display: none;
     }
 
-    /* Keep demo button visible on mobile; make it smaller and aligned right */
     #header-demo {
         display: flex;
         justify-content: flex-end;
@@ -177,7 +171,6 @@ body{
         display: flex;
     }
 
-    /* Make the menu a dropdown panel on mobile */
     #header-menu {
         position: absolute;
         top: 62px;
@@ -196,7 +189,6 @@ body{
         z-index: 1100;
     }
 
-    /* Ensure toggle and demo sit on the header row without overlap */
     .menu-toggle {
         order: 1;
     }
