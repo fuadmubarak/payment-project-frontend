@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/css/sign-in.css';
+import { NavLink } from 'react-router-dom';
 
 const Signin = () => {
   return (
@@ -21,8 +22,8 @@ const Signin = () => {
         <input type="email" placeholder="Email" required />
         <p class="form-subtitle">Password</p>
         <input type="password" placeholder="Password" required />
-
-        <button type="submit">Sign in</button>
+    
+        <NavLink className="button" to="/dashboard">Sign in</NavLink>
       </form>
     </div>
 

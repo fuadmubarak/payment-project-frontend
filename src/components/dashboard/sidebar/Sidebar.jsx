@@ -6,15 +6,11 @@ const Sidebar = () => {
 
   return (
 <aside className="sidebar">
-      {/* TOP */}
       <div className="sidebar-top">
-        {/* <div className="logo"> */}
           <img src="/ppa-logo-only.png" alt="Logo" />
           <p className='p'>PPA</p>
-        {/* </div> */}
       </div>
 
-      {/* MENU */}
       <nav className="sidebar-menu">
         <NavLink
           to="/dashboard"
@@ -63,7 +59,6 @@ const Sidebar = () => {
         </NavLink>
       </nav>
 
-      {/* FOOTER */}
       <div className="sidebar-footer">
         <button className="pro-btn">Log Out</button>
       </div>

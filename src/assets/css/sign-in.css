@@ -98,8 +98,8 @@ form input:focus {
   outline: none;
   box-shadow: 0 0 0 2px #ffd84d;
 }
-
-form button {
+ 
+.button {
   width: 100%;
   padding: 20px 18px;
   margin-top: 30px;
@@ -108,10 +108,17 @@ form button {
   background: #ffd84d;
   font-size: 16px;
   cursor: pointer;
-  font-weight: 550;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  text-align: center;
 }
 
-form button:hover {
+.button:hover {
   opacity: 0.9;
 }
 

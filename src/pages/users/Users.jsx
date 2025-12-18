@@ -37,7 +37,6 @@ const Users = () => {
 
       <div className="dashboard-main">
         <div className="content">
-          {/* Page Header */}
           <div className="page-header">
             <div>
               <h2>Users</h2>
@@ -49,7 +48,6 @@ const Users = () => {
             <button className="primary-btn" onClick={() => setShowModal(true)}>+ Add User</button>
           </div>
 
-          {/* Users Table */}
           <div className="card table-card">
             <table className="user-table">
               <thead>

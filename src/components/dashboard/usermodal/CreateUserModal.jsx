@@ -20,14 +20,13 @@ const CreateUserModal = ({ onClose }) => {
     role: "",
   });
 
-  // Fetch roles from API
   useEffect(() => {
     api
       .get("/roles")
       .then((res) => {
         const options = res.data.map((role) => ({
-          value: role.code, // send this to API
-          label: role.name, // display to user
+          value: role.code, 
+          label: role.name,
         }));
         setRoles(options);
       })
@@ -36,13 +35,12 @@ const CreateUserModal = ({ onClose }) => {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // clear error
+    setErrors({ ...errors, [e.target.name]: "" }); 
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation
     let validationErrors = {};
     if (!form.name.trim()) validationErrors.name = "Name is required";
     if (!form.email.trim()) validationErrors.email = "Email is required";
@@ -59,7 +57,7 @@ const CreateUserModal = ({ onClose }) => {
         role: selectedRole.value,
       });
 
-      onClose(true); // close modal
+      onClose(true); 
       setForm({ name: "", email: "", password: "" });
       setSelectedRole(null);
       setErrors({});
@@ -71,7 +69,6 @@ const CreateUserModal = ({ onClose }) => {
     }
   };
 
-  // Custom styles for seamless react-select
   const customSelectStyles = {
     input: (base) => ({
 ...base,

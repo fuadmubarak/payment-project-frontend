@@ -1,4 +1,4 @@
-/* Overlay */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -13,21 +13,20 @@
   z-index: 999;
 }
 
-/* Modal container */
 .modal {
   background: #ffffff;
   padding: 2rem 2.5rem;
   width: 420px;
   max-width: 95%;
-  border-radius: 20px; /* softer edges */
-  border: 1px solid #e5e7eb; /* subtle border */
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* soft shadow */
+  border-radius: 20px; 
+  border: 1px solid #e5e7eb; 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); 
   animation: slideIn 0.3s ease;
   transition: transform 0.3s ease;
 }
 
 .modal:hover {
-  transform: translateY(-2px); /* subtle lift on hover */
+  transform: translateY(-2px); 
 }
 
 .modal h3 {
@@ -38,7 +37,6 @@
   font-weight: 600;
 }
 
-/* Inputs and Select */
 .modal form input,
 .modal form .react-select__control {
   width: 100%;
@@ -57,7 +55,6 @@
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
 }
 
-/* Buttons */
 .modal-actions {
   display: flex;
   justify-content: flex-end;
@@ -100,7 +97,6 @@
   background: #e5e7eb;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -111,17 +107,9 @@
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  .modal {
-    width: 90%;
-    padding: 1.5rem 2rem;
-  }
-}
-
 .field-error {
   margin-top: 10px;
-  color: #ef4444; /* red */
+  color: #ef4444; 
   font-size: 0.875rem;
   margin-top: -0.5rem;
   margin-bottom: 0.8rem;
